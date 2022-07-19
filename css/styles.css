@@ -1,0 +1,111 @@
+/* Base */
+*{
+  text-align: center;
+  margin: 0 auto;
+}
+body {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* Typeography */
+h1 {
+  font-size: 75px;
+  margin: 50px 25px;
+}
+h2 {
+  font-size: 55px;
+  color:rgb(0, 0, 0);
+  line-height: 100px;
+}
+p {
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+}
+
+/* Layout */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  justify-content: center;
+}
+section {
+  min-height: 350px;
+}
+.section-container {
+  padding: 25px;
+}
+
+/*Active State*/
+section.active-section {
+  background: rgb(236, 231, 231);
+}
+
+/* Navigation*/
+.navmenu ul {
+  text-align: center;
+}
+.navmenu li {
+  display: inline-block;
+}
+.navmenu .menu {
+  display: block;
+  padding: 25px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.navmenu .menu:hover {
+  background: #333;
+  color: #fff;
+}
+
+/*Active State*/
+.navmenu .active {
+  background: rgb(61, 39, 39);
+  color: #fff;
+}
+
+/*header*/
+.pgheader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background: rgb(0, 0, 0);
+}
+
+/*foooter*/
+.pgfooter {
+  background: #000;
+  padding: 25px;
+  color: #fff;
+}
+.pgfooter p {
+  color: #fff;
+}
+
+/*Back To Top*/
+#top {
+  position: fixed;
+  background: rgb(61, 39, 39);
+  color: rgb(255, 255, 255);
+  left: 90%;
+  top: 90%;
+  border-radius: 20%;
+  padding: 10px;
+}
+
+/*Responsiveness Usability*/
+@media (min-width:250px) and (max-width:950px){
+  h1 {
+    font-size: 55px
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .section-container {
+    max-width: 800px;
+    padding: 100px;
+  }
+}
