@@ -1,4 +1,5 @@
 # Landing Page Project
+completed as a part of Udacity Front End Web Developer Nanodegree Program.
 
 ## Table of Contents
 
